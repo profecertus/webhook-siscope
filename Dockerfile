@@ -10,4 +10,4 @@ COPY --from=builder /app/webhook-siscope /app
 LABEL authors="edwin"
 EXPOSE 8090
 
-ENTRYPOINT ["webhook-siscope"]
+ENTRYPOINT ["./webhook-siscope"]
