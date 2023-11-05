@@ -5,7 +5,7 @@ RUN go build -o webhook-siscope
 
 FROM ubuntu:latest
 WORKDIR /app
-COPY --from:builder=/app/webhook-siscope /app
+COPY --from=builder /app/webhook-siscope /app
 LABEL authors="edwin"
 EXPOSE 8090
 
