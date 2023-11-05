@@ -2,7 +2,7 @@ FROM golang:latest AS builder
 WORKDIR /app
 COPY main.go /app
 RUN ls /app
-RUN /bin/sh  go build -o webhook-siscope
+RUN /bin/sh -c go build -o webhook-siscope
 
 FROM ubuntu:latest
 WORKDIR /app
