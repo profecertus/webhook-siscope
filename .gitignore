@@ -1,0 +1,39 @@
+# Directorios de salida generados por go get/build/test
+/bin/
+/pkg/
+
+# Ejecutables generados por go build
+*.exe
+*.out
+*.test
+
+# Archivos binarios generados por go build
+*.a
+
+# Carpeta con los archivos de dependencias
+/vendor/
+
+# Carpeta con los archivos de dependencias (alternativa)
+/Godeps/
+
+# Carpeta con archivos de logs
+/log/
+
+# Archivo de configuración local
+*.yaml
+*.yml
+
+# Archivos de configuración específicos del entorno
+.env
+
+# Ficheros temporales
+*.tmp
+
+# Archivos de respaldo de editores
+*.swp
+*.swo
+*~
+
+# Directorios y archivos específicos de entorno de desarrollo
+.idea/
+.vscode/
