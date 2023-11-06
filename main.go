@@ -211,9 +211,11 @@ func main() {
 			}
 
 			var dato string
-			dato = "actualizar_" + data.Repository.Name + ".sh"
+			dato = "/informacion/actualizar_" + data.Repository.Name + ".sh"
 
-			cmd := exec.Command("sh", dato)
+			fmt.Println(dato)
+
+			cmd := exec.Command("sh ", dato)
 			out, err := cmd.CombinedOutput()
 			if err != nil {
 				fmt.Println("Error al ejecutar el comando:", err)
