@@ -215,7 +215,7 @@ func main() {
 
 			fmt.Println(dato)
 
-			cmd := exec.Command("sh ", dato)
+			cmd := exec.Command("/bin/sh ", dato)
 			out, err := cmd.CombinedOutput()
 			if err != nil {
 				fmt.Println("Error al ejecutar el comando:", err)
