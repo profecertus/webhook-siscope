@@ -1,8 +1,9 @@
 FROM golang:latest AS builder
 WORKDIR /app
-COPY *.go .
-RUN ls
-RUN /bin/sh -c go build -o webhook-siscope
+COPY  . .
+RUN chmod 777 *
+RUN  go build -o webhook-siscope
+RUN ls -la
 
 FROM ubuntu:latest
 WORKDIR /app
